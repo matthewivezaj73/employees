@@ -11,6 +11,7 @@ while not not_employee:
         print("Starting the process of creating the employee...")
     #Handing the case where the user selects option 1.
     elif decision.isdigit() == 2:
+        print("Showing the current employees...")
     #Handing the case where the user selects option 1.
     elif decision.isdigit() == 3:
     #Handing the case where the user selects option 1.
