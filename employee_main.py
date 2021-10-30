@@ -6,6 +6,15 @@ import time
 
 #Importing modules.
 from classes.check_employees import *
+from classes.database_access import *
+
+#Creating a connection to the database
+my_db = DB_Connect('root','','python_projects')
+
+#Selecting all of the columns from the database to display when the user tells us, in both the crm_data table in a variable named my_result and the Mailings table in a variable named other_result.
+my_result = my_db.executeSelectQuery("SELECT * FROM crm_data") 
+
+
 #Setting a flag.
 not_employee = False
 #Testing for adding employees.
@@ -15,6 +24,9 @@ while not not_employee:
     #Handing the case where the user selects option 1.
     if decision.isdigit() == 1:
         print("Starting the process of creating the employee...")
+        f_name = input("Please input your first name:")
+        f_name = input("Please input your first name:")
+    
     #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
         print("Showing the current employees...")
@@ -30,7 +42,7 @@ while not not_employee:
     #Handing the case where the user selects option 6.
     elif decision.isdigit() == 6:
         print("Begin Import employees to the database...")
-        my_db.executeQuery("INSERT INTO crm_data (f_name, l_name,address, city, state,zip,company,primary_phone,secondary_phone,email_address) VALUES (\'"+
+        my_db.executeQuery("INSERT INTO crm_data (employee_name, date_of_hire, date_of_seperation, employee_phone, employee_secondary_phone,employee_address) VALUES (\'"+
         f_name +"\',\'"+ l_name+"\',\'"+address_value +"\',\'"+ city_information_value +"\',\'"+state.upper()+"\',\'"+ zip_code_value+"\',\'"+ company+"\',\'"+ 
         primary_phone_number_value+"\',\'"+ secondary_phone_number_value+"\',\'"+ email_address_value+"\')")
 
