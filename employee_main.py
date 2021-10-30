@@ -9,15 +9,15 @@ while not not_employee:
     #Handing the case where the user selects option 1.
     if decision.isdigit() == 1:
         print("Starting the process of creating the employee...")
-    #Handing the case where the user selects option 1.
+    #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
         print("Showing the current employees...")
-    #Handing the case where the user selects option 1.
+    #Handing the case where the user selects option 3.
     elif decision.isdigit() == 3:
         print("Showing the seperated employees...")
-    #Handing the case where the user selects option 1.
+    #Handing the case where the user selects option 4.
     elif decision.isdigit() == 4:
         print("Showing all employees...")
-    #Handing the case where the user selects option 1.
+    #Handing the case where the user selects option 5.
     elif decision.isdigit() == 5:
         print("Begin editing employees...")
