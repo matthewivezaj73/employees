@@ -27,6 +27,8 @@ while not not_employee:
         f_name = input("Please input your first name: ")
         l_name = input("Please input your last name: ")
         combined_name = f"{f_name} {l_name}"
+        dataOfHire = input("Please enter the employee date of hire: ")
+        dateOfLeave = input("Please enter the employee date of seperation: ")
 
     #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
@@ -46,7 +48,7 @@ while not not_employee:
     elif decision.isdigit() == 6:
         print("Begin Import employees to the database...")
         my_db.executeQuery("INSERT INTO crm_data (employee_name, date_of_hire, date_of_seperation, employee_phone, employee_secondary_phone,employee_address) VALUES (\'"+
-        f_name +"\',\'"+ l_name+"\',\'"+address_value +"\',\'"+ city_information_value +"\',\'"+state.upper()+"\',\'"+ zip_code_value+"\',\'"+ company+"\',\'"+ 
+        combined_name+"\',\'"+dataOfHire +"\',\'"+ city_information_value +"\',\'"+state.upper()+"\',\'"+ zip_code_value+"\',\'"+ company+"\',\'"+ 
         primary_phone_number_value+"\',\'"+ secondary_phone_number_value+"\',\'"+ email_address_value+"\')")
 
     #Handing the case where the user selects option 7.
