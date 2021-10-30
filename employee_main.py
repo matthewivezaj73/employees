@@ -21,3 +21,6 @@ while not not_employee:
     #Handing the case where the user selects option 5.
     elif decision.isdigit() == 5:
         print("Begin editing employees...")
+    #Handing the case where the user selects option 6.
+    elif decision.isdigit() == 6:
+        print("Begin Import employees to the database...")
