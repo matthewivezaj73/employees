@@ -31,7 +31,8 @@ while not not_employee:
     #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
         print("Showing the current employees...")
-
+        for result in my_result:
+            print(result)
     #Handing the case where the user selects option 3.
     elif decision.isdigit() == 3:
         print("Showing the seperated employees...")
