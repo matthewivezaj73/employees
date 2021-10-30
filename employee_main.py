@@ -17,5 +17,7 @@ while not not_employee:
         print("Showing the seperated employees...")
     #Handing the case where the user selects option 1.
     elif decision.isdigit() == 4:
+        print("Showing all employees...")
     #Handing the case where the user selects option 1.
     elif decision.isdigit() == 5:
+        print("Begin editing employees...")
