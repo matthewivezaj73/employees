@@ -1,3 +1,9 @@
+#Import libraries.
+import json
+import os
+import shutil
+import time
+
 #Importing modules.
 from classes.check_employees import *
 #Setting a flag.
@@ -24,6 +30,10 @@ while not not_employee:
     #Handing the case where the user selects option 6.
     elif decision.isdigit() == 6:
         print("Begin Import employees to the database...")
+        my_db.executeQuery("INSERT INTO crm_data (f_name, l_name,address, city, state,zip,company,primary_phone,secondary_phone,email_address) VALUES (\'"+
+        f_name +"\',\'"+ l_name+"\',\'"+address_value +"\',\'"+ city_information_value +"\',\'"+state.upper()+"\',\'"+ zip_code_value+"\',\'"+ company+"\',\'"+ 
+        primary_phone_number_value+"\',\'"+ secondary_phone_number_value+"\',\'"+ email_address_value+"\')")
+
     #Handing the case where the user selects option 7.
     elif decision.isdigit() == 7:
         print("Export an excel spreadsheet of the current employees...")
