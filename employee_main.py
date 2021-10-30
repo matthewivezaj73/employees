@@ -5,7 +5,7 @@ not_employee = False
 #Testing for adding employees.
 while not not_employee:
     #Asking the user what they would like to do.
-    decision = input("1. Create an employee.\n2. Show Current employees.\n3. Show seperated employees.\n4. Edit an employee.\n5. Import to database.\n6. Export a excel spreadsheet")
+    decision = input("1. Create an employee.\n2. Show Current employees.\n3. Show seperated employees.\n5. Edit an employee.\n6. Import to database.\n7. Export a excel spreadsheet")
     #Handing the case where the user selects option 1.
     if decision.isdigit() == 1:
         print("Starting the process of creating the employee...")
@@ -14,6 +14,7 @@ while not not_employee:
         print("Showing the current employees...")
     #Handing the case where the user selects option 1.
     elif decision.isdigit() == 3:
+        print("Showing the seperated employees...")
     #Handing the case where the user selects option 1.
     elif decision.isdigit() == 4:
     #Handing the case where the user selects option 1.
