@@ -10,3 +10,5 @@ while not not_employee:
     if decision.isdigit() == 1:
     #Handing the case where the user selects option 1.
     elif decision.isdigit() == 2:
+    #Handing the case where the user selects option 1.
+    elif decision.isdigit() == 3:
