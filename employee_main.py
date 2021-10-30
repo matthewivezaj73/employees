@@ -12,7 +12,7 @@ from classes.database_access import *
 my_db = DB_Connect('root','','python_projects')
 
 #Selecting all of the columns from the database to display when the user tells us, in both the crm_data table in a variable named my_result and the Mailings table in a variable named other_result.
-my_result = my_db.executeSelectQuery("SELECT * FROM crm_data") 
+my_result = my_db.executeSelectQuery("SELECT * FROM employee_data") 
 
 
 #Setting a flag.
@@ -31,6 +31,7 @@ while not not_employee:
     #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
         print("Showing the current employees...")
+
     #Handing the case where the user selects option 3.
     elif decision.isdigit() == 3:
         print("Showing the seperated employees...")
