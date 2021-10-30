@@ -8,3 +8,5 @@ while not not_employee:
     decision = input("1. Create an employee.\n2. Show Current employees.\n3. Show seperated employees.\n4. Edit an employee.\n5. Import to database.\n6. Export a excel spreadsheet")
     #Handing the case where the user selects option 1.
     if decision.isdigit() == 1:
+    #Handing the case where the user selects option 1.
+    elif decision.isdigit() == 2:
