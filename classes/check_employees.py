@@ -17,6 +17,14 @@ class Employee:
         """
         Creating a method that will add an employee to a dictionary.
         """
+    def validateAdress(self, employeeAddress):
+        """
+        Creating a method that will validate an employee's address. 
+        """
+        if (("." in employeeAddress) and (employeeAddress.replace('.','')).isalnum()):
+            return True
+        else:
+            return False
     def validateNumber(self,Employeenumber):
         """
         Creating a method that will validate an employee number.
