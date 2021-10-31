@@ -32,7 +32,7 @@ while not not_employee:
         while not not_first_name:
             f_name = input("Please input your first name: ")
             not_first_name = my_employee.validateEmployee(f_name)
-        
+        #Testing for the employee last name.
         l_name = input("Please input your last name: ")
         combined_name = f"{f_name} {l_name}"
         dataOfHire = input("Please enter the employee date of hire: ")
