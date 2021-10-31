@@ -24,6 +24,7 @@ while not not_employee:
     #Handing the case where the user selects option 1.
     if decision.isdigit() == 1:
         print("Starting the process of creating the employee...")
+        not_first_name = False
         f_name = input("Please input your first name: ")
         l_name = input("Please input your last name: ")
         combined_name = f"{f_name} {l_name}"
