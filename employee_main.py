@@ -69,9 +69,14 @@ while not not_employee:
         not_second_phone = False
         #Testing for the employee phone number.
         while not not_second_phone:
-            
-            employee_second_phone = input("Please enter the employee secondary number: ")
-            not_phone = my_employee.validatePhone(employee_second_phone)
+            not_continue = input("Does the employee have a secondary phone number? Y/N: ")
+            if not_continue.lower() == "y":
+                employee_second_phone = input("Please enter the employee secondary number: ")
+                not_phone = my_employee.validatePhone(employee_second_phone)
+            elif not_continue.lower() == "n":
+                not_second_phone = True
+            else:
+                print("That is not a valid choice!")
         #Setting a flag.
         not_address = False
         #Testing for the employee address.
