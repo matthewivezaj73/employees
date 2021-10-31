@@ -42,6 +42,7 @@ while not not_employee:
         combined_name = f"{f_name} {l_name}"
         #Setting a flag.
         not_hire = False
+        #Testing for the employee date of hire.
         while not not_hire:
             dateOfHire = input("Please enter the employee date of hire: ")
             not_hire = my_employee.validateDateOfHire(dateOfHire)
