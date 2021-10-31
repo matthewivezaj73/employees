@@ -46,6 +46,7 @@ while not not_employee:
             dateOfHire = input("Please enter the employee date of hire: ")
             not_hire = my_employee.validateDateOfHire(dateOfHire)
         #Setting a flag.
+        not_leave = False
         dateOfLeave = input("Please enter the employee date of seperation: ")
         employee_number = input("Please enter your employee number: ")
     #Handing the case where the user selects option 2.
