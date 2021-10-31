@@ -43,4 +43,7 @@ class Employee:
         else:
             return False
 
-    def validatePhone
+    def validatePhone(self,employeePhone):
+        """
+        A method that validates an employees number.
+        """
