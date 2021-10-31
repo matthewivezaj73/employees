@@ -17,7 +17,7 @@ class Employee:
         """
         Creating a method that will add an employee to a dictionary.
         """
-    def checkNumber(self,Employeenumber):
+    def validateNumber(self,Employeenumber):
         """
         Creating a method that will validate an employee number.
         """
@@ -42,3 +42,5 @@ class Employee:
             return True
         else:
             return False
+
+    def validatePhone

@@ -63,6 +63,7 @@ while not not_employee:
         #Testing for the employee phone number.
         while not not_phone:
             employee_phone = input("Please enter the employee number: ")
+            not_phone = my_employee.validatePhone(employee_phone)
     #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
         print("Showing the current employees...")
