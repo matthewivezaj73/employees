@@ -86,6 +86,10 @@ while not not_employee:
             not_address = my_employee.validateAddress(employee_address)
         if type(not_second_phone) is True:
             entire_employee_list.append({"Employee Name:":combined_name, "Employee Number:":employee_number,"Date of Hire":dateOfHire,"Date of leave":dateOfLeave,"Employee Phone number:":employee_phone,"Employee Secondary Phone:":employee_second_phone})
+        
+        #Need to add something if the employee seperated from the company.
+        #So they have their own dictionary.
+        
         else:
             entire_employee_list.append({"Employee Name:":combined_name, "Employee Number:":employee_number,"Date of Hire":dateOfHire,"Date of leave":dateOfLeave,"Employee Phone number:":employee_phone})
 
