@@ -40,6 +40,7 @@ while not not_employee:
             not_last_name = my_employee.validateEmployee(l_name)
         #Combining the first name and last name together to for proper entry into phpmyadmin.
         combined_name = f"{f_name} {l_name}"
+        not_hire = False
         dataOfHire = input("Please enter the employee date of hire: ")
         dateOfLeave = input("Please enter the employee date of seperation: ")
         employee_number = input("Please enter your employee number: ")
