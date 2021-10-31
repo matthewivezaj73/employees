@@ -71,7 +71,6 @@ while not not_employee:
         while not not_second_phone:
             employee_second_phone = input("Please enter the employee secondary number: ")
             not_phone = my_employee.validatePhone(employee_second_phone)
-
         #Setting a flag.
         not_address = False
         #Testing for the employee address.
@@ -97,8 +96,7 @@ while not not_employee:
     elif decision.isdigit() == 6:
         print("Begin Import employees to the database...")
         my_db.executeQuery("INSERT INTO crm_data (employee_name, date_of_hire, date_of_seperation, employee_phone, employee_secondary_phone,employee_address) VALUES (\'"+
-        combined_name+"\',\'"+dateOfHire +"\',\'"+ dateOfLeave +"\',\'"+employee_phone+"\',\'"+ employee_second_phone+"\',\'"+ company+"\',\'"+ 
-        primary_phone_number_value+"\',\'"+ secondary_phone_number_value+"\',\'"+ email_address_value+"\')")
+        combined_name+"\',\'"+dateOfHire +"\',\'"+ dateOfLeave +"\',\'"+employee_phone+"\',\'"+ employee_second_phone+"\',\'"+ employee_address+"\',\'"+ "\')")
 
     #Handing the case where the user selects option 7.
     elif decision.isdigit() == 7:
