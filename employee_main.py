@@ -49,6 +49,7 @@ while not not_employee:
         not_leave = False
         while not not_leave:
             dateOfLeave = input("Please enter the employee date of seperation: ")
+            not_leave = my_employee.validateDateOfHire(dateOfLeave)
         employee_number = input("Please enter your employee number: ")
     #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
