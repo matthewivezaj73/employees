@@ -69,7 +69,7 @@ while not not_employee:
         not_address = False
         #Testing for the employee address.
         while not not_address:
-            employee_phone = input("Please enter the employee number: ")
+            employee_address = input("Please enter the employee address: ")
             not_phone = my_employee.validatePhone(employee_phone)
     
     #Handing the case where the user selects option 2.
