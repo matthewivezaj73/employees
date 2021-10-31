@@ -42,7 +42,8 @@ while not not_employee:
         combined_name = f"{f_name} {l_name}"
         #Setting a flag.
         not_hire = False
-        dataOfHire = input("Please enter the employee date of hire: ")
+        while not not_hire:
+            dataOfHire = input("Please enter the employee date of hire: ")
         dateOfLeave = input("Please enter the employee date of seperation: ")
         employee_number = input("Please enter your employee number: ")
     #Handing the case where the user selects option 2.
