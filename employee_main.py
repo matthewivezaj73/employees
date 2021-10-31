@@ -32,8 +32,9 @@ while not not_employee:
         while not not_first_name:
             f_name = input("Please input your first name: ")
             not_first_name = my_employee.validateEmployee(f_name)
-        #Testing for the employee last name.
+        #Setting a flag
         not_last_name = False
+        #Testing for the employee last name.
         while not not_last_name:
             l_name = input("Please input your last name: ")
             not_last_name = my_employee.validateEmployee(l_name)
