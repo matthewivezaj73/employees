@@ -21,7 +21,7 @@ class Employee:
         """
         Creating a method that will validate an employee's address. 
         """
-        if (("." in employeeAddress) and (employeeAddress.replace('.','')).isalnum()):
+        if ((" " in employeeAddress) and (employeeAddress.replace(' ','')).isalnum()) or (("." in employeeAddress) and (employeeAddress.replace('.','')).isalnum()) or (("-" in employeeAddress) and (employeeAddress.replace('-','')).isalnum()):
             return True
         else:
             return False
