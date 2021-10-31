@@ -17,10 +17,11 @@ class Employee:
         """
         Creating a method that will add an employee to a dictionary.
         """
-    def checkNumber(self,number):
+    def checkNumber(self,Employeenumber):
         """
         Creating a method that will validate an employee number.
         """
+        (("." in Employeenumber) and (Employeenumber.replace('.','')).isdigit() and len(Employeenumber) == 10)
     def validateDateOfHire(self,employeeDate):
         """
         Creating a method that will validate the date for when an 
