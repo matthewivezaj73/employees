@@ -69,6 +69,7 @@ while not not_employee:
         not_second_phone = False
         #Testing for the employee phone number.
         while not not_second_phone:
+            
             employee_second_phone = input("Please enter the employee secondary number: ")
             not_phone = my_employee.validatePhone(employee_second_phone)
         #Setting a flag.
@@ -77,7 +78,7 @@ while not not_employee:
         while not not_address:
             employee_address = input("Please enter the employee address: ")
             not_address = my_employee.validateAddress(employee_address)
-    
+    entire_employee_list.append({"Employee Name:":combined_name, "Employee Number:":employee_number,"Date of Hire":dateOfHire,"Date of leave":dateOfLeave,"Employee Phone number:":employee_phone,"Employee Secondary Phone:":employee_second_phone})
     #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
         print("Showing the current employees...")
