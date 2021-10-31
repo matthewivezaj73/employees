@@ -17,8 +17,8 @@ my_db = DB_Connect('root','','python_projects')
 #Selecting all of the columns from the database to display when the user tells us, 
 # in both the crm_data table in a variable named my_result and the Mailings table in a variable named other_result.
 my_result = my_db.executeSelectQuery("SELECT * FROM employee_data") 
-
-
+#Creating a blank list
+entire_employee_list = []
 #Setting a flag.
 not_employee = False
 #Testing for adding employees.
