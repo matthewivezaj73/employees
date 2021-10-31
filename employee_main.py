@@ -66,9 +66,9 @@ while not not_employee:
             employee_phone = input("Please enter the employee number: ")
             not_phone = my_employee.validatePhone(employee_phone)
         #Setting a flag.
-        not_phone = False
+        not_address = False
         #Testing for the employee phone number.
-        while not not_phone:
+        while not not_address:
             employee_phone = input("Please enter the employee number: ")
             not_phone = my_employee.validatePhone(employee_phone)
     
