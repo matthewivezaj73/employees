@@ -76,7 +76,7 @@ while not not_employee:
     elif decision.isdigit() == 6:
         print("Begin Import employees to the database...")
         my_db.executeQuery("INSERT INTO crm_data (employee_name, date_of_hire, date_of_seperation, employee_phone, employee_secondary_phone,employee_address) VALUES (\'"+
-        combined_name+"\',\'"+dateOfHire +"\',\'"+ city_information_value +"\',\'"+state.upper()+"\',\'"+ zip_code_value+"\',\'"+ company+"\',\'"+ 
+        combined_name+"\',\'"+dateOfHire +"\',\'"+ dateOfLeave +"\',\'"+state.upper()+"\',\'"+ zip_code_value+"\',\'"+ company+"\',\'"+ 
         primary_phone_number_value+"\',\'"+ secondary_phone_number_value+"\',\'"+ email_address_value+"\')")
 
     #Handing the case where the user selects option 7.
