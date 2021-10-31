@@ -106,3 +106,6 @@ while not not_employee:
             print("Adding employees to a csv file...")
 
             with open("text_files/employee_list.csv","w+") as CSV_list:
+                for employee in emp_list:
+                    #Adding each part of employee data to the csv list.
+                    CSV_list.write(employee)
