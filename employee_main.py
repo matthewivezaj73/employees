@@ -70,7 +70,7 @@ while not not_employee:
         #Testing for the employee address.
         while not not_address:
             employee_address = input("Please enter the employee address: ")
-            not_address = my_employee.validateAddress(employee_phone)
+            not_address = my_employee.validateAddress(employee_address)
     
     #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
