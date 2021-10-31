@@ -47,3 +47,7 @@ class Employee:
         """
         A method that validates an employees number.
         """
+        if (("." in employeePhone) and (employeePhone.replace('.','')).isdigit() and len(employeePhone) == 12) or (("-" in employeePhone) and (employeePhone.replace('-','')).isdigit() and len(employeePhone) == 12) or ((employeePhone.isdigit()) and len(employeePhone) == 10):
+            return True
+        else:
+            return False
