@@ -100,4 +100,9 @@ while not not_employee:
 
     #Handing the case where the user selects option 7.
     elif decision.isdigit() == 7:
+        employee_list = "text_files/employee_list.txt"
         print("Export an excel spreadsheet of the current employees...")
+        with open (employee_list, 'r') as emp_list:
+            print("Adding employees to a csv file...")
+
+            with open("text_files/employee_list.csv","w+") as CSV_list:
