@@ -21,7 +21,10 @@ class Employee:
         """
         Creating a method that will validate an employee number.
         """
-        (("." in Employeenumber) and (Employeenumber.replace('.','')).isdigit() and len(Employeenumber) == 10)
+        if (("." in Employeenumber) and (Employeenumber.replace('.','')).isdigit() and len(Employeenumber) == 10) or (("-" in Employeenumber) and (Employeenumber.replace('-','')).isdigit() and len(Employeenumber) == 10):
+            return True
+        else:
+            return False
     def validateDateOfHire(self,employeeDate):
         """
         Creating a method that will validate the date for when an 
