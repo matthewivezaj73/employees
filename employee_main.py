@@ -61,7 +61,8 @@ while not not_employee:
         #Setting a flag.
         not_phone = False
         #Testing for the employee phone number.
-        
+        while not not_phone:
+            
     #Handing the case where the user selects option 2.
     elif decision.isdigit() == 2:
         print("Showing the current employees...")
