@@ -48,6 +48,7 @@ while not not_employee:
             not_hire = my_employee.validateDateOfHire(dateOfHire)
         #Setting a flag.
         not_leave = False
+        #Testing for the employee last name.
         while not not_leave:
             dateOfLeave = input("Please enter the employee date of seperation: ")
             not_leave = my_employee.validateDateOfHire(dateOfLeave)
