@@ -8,6 +8,9 @@ import time
 from classes.check_employees import *
 from classes.database_access import *
 
+#Creating an instance of the employee class.
+my_employee = Employee("Sam",424214,"11-30-2018")
+
 #Creating a connection to the database
 my_db = DB_Connect('root','','python_projects')
 
