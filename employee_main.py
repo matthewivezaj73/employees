@@ -84,7 +84,8 @@ while not not_employee:
                 not_second_phone = False
                 break
             else:
-                print("That is not a valid choice!")
+                print(f"Sorry, but \'{not_continue}\' is not a valid option, please try again!")
+
         #Setting a flag.
         not_address = False
         #Testing for the employee address.
