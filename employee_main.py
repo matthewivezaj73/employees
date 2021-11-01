@@ -70,7 +70,7 @@ while not not_employee:
         not_phone = False
         #Testing for the employee phone number.
         while not not_phone:
-            employee_phone = input("Please enter the employee number: ")
+            employee_phone = input("Please enter the employee primary phone number: ")
             not_phone = my_employee.validatePhone(employee_phone)
         #Setting a flag.
         not_second_phone = False
