@@ -51,8 +51,15 @@ while not not_employee:
         not_leave = False
         #Testing for the employee last name.
         while not not_leave:
-            dateOfLeave = input("Please enter the employee date of seperation: ")
-            not_leave = my_employee.validateDateOfHire(dateOfLeave)
+            not_continue = input("Does the employee have a secondary phone number? Y/N: ")
+            if not_continue.lower() == "y":
+
+                dateOfLeave = input("Please enter the employee date of seperation: ")
+                not_leave = my_employee.validateDateOfHire(dateOfLeave)
+            elif not_continue.lower() == "n":
+                break
+            else:
+                print(f"Sorry, but \'{not_continue}\' is not a valid option, please try again!")
         #Setting a flag.
         not_number = False
         #Testing for the employee number.
